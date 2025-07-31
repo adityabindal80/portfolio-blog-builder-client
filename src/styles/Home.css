@@ -1,0 +1,20 @@
+/* Home.css */
+
+.home-container {
+    padding: 2rem;
+    background: radial-gradient(circle at center, #0d1117, #000000);
+    min-height: 100vh;
+  }
+  
+  .custom-image {
+    width: 80%;
+    height: 17rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-image:hover {
+    transform: scale(1.03);
+  }
+  

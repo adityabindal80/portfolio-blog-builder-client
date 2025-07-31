@@ -1,0 +1,11 @@
+.about-container {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0f172a, #1e293b);
+    padding: 2rem;
+  }
+  
+  .about-card {
+    max-width: 700px;
+    color: #333;
+  }
+  

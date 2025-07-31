@@ -1,0 +1,13 @@
+/* src/styles/Register.css */
+
+.register-container {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0d1117, #1f2937);
+  }
+  
+  .register-card {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+  }
+  

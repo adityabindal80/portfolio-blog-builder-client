@@ -1,0 +1,62 @@
+.dashboard-container {
+    padding: 2rem;
+    background-color: #0b445c;
+    color: #cbc7d4;
+    min-height: 100vh;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tab-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color: #444;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn:hover {
+    background-color: #666;
+  }
+  
+  .tab-btn.active {
+    background-color: #0d6efd;
+    color: white;
+  }
+  
+  .dashboard-welcome {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .dashboard-section {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  
+  input, textarea {
+    background-color: #2c2c2c;
+    color: rgb(114, 135, 154);
+    border: 1px solid #555;
+    margin-bottom: 1rem;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #000000;
+    background-color: #333;
+    outline: none;
+  }
+  
+  .blog-preview {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    white-space: pre-wrap;
+  }
+  

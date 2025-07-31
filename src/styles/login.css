@@ -1,0 +1,13 @@
+/* src/styles/Login.css */
+
+.login-container {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0d1117, #1f2937);
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+  }
+  
