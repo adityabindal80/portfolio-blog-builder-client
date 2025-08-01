@@ -35,7 +35,7 @@ function Dashboard() {
   };
   const fetchUserBlogs = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/blogs`, {
+      const res = await fetch(`https://portfolio-backend-7vmj.onrender.com/api/blogs`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (!res.ok) throw new Error('Failed to fetch blogs');
@@ -52,8 +52,8 @@ function Dashboard() {
   const handleSaveBlog = async () => {
     try {
       const url = editingId
-        ? `http://localhost:5000/api/blogs/${editingId}`
-        : 'http://localhost:5000/api/blogs';
+        ? `https://portfolio-backend-7vmj.onrender.com/api/blogs/${editingId}`
+        : 'https://portfolio-backend-7vmj.onrender.com/api/blogs';
       const method = editingId ? 'PUT' : 'POST';
       const res = await fetch(url, {
         method,
@@ -80,7 +80,7 @@ function Dashboard() {
   }, [token, user?._id]);
   const handleDeleteBlog = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/blogs/${id}`, {
+      const res = await fetch(`https://portfolio-backend-7vmj.onrender.com/api/blogs/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -99,7 +99,7 @@ function Dashboard() {
   });
   useEffect(() => {
     if (token) {
-      fetch('http://localhost:5000/api/profile', {
+      fetch('https://portfolio-backend-7vmj.onrender.com/api/profile', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -127,7 +127,7 @@ function Dashboard() {
   };
   const handleSaveProfile = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/profile', {
+      const res = await fetch('https://portfolio-backend-7vmj.onrender.com/api/profile', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -152,7 +152,7 @@ function Dashboard() {
     e.preventDefault();
     if (!newProject.title) return;
     try{
-      const res = await fetch('http://localhost:5000/api/projects', {
+      const res = await fetch('https://portfolio-backend-7vmj.onrender.com/api/projects', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

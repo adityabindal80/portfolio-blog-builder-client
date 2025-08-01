@@ -10,7 +10,7 @@ function ViewBlog() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/blogs/${id}`);
+        const res = await fetch(`https://portfolio-backend-7vmj.onrender.com/api/blogs/${id}`);
         if (!res.ok) throw new Error('Failed to fetch blog');
         const data = await res.json();
         setBlog(data);

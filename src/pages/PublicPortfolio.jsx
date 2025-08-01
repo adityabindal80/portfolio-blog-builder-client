@@ -15,7 +15,7 @@ function PublicPortfolio() {
   useEffect(() => {
     const fetchUserPortfolio = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/public/${username}`);
+        const res = await fetch(`https://portfolio-backend-7vmj.onrender.com/api/public/${username}`);
         if (!res.ok) throw new Error('Failed to fetch data');
         const data = await res.json();
         setProjects(data.projects);
