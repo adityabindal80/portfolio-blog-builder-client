@@ -11,7 +11,7 @@ const LoggedInNavbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/" style={{ fontWeight: 'bold' }}>
-          # Portfolio Builder
+        <span className="fw-bold" style={{ fontSize: '1.3rem' }}>#StageFolio</span> - <small className="" style={{ fontSize: '0.8rem', letterSpacing: '.3px' }}>Showcase Your Work, Share Your Voice.</small>
         </Link>
 
         <div className="collapse navbar-collapse justify-content-end">
